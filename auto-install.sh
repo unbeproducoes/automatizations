@@ -20,39 +20,13 @@ echo "██╔═══╝ ██╔══██║██║     ██╔═�
 echo "██║     ██║  ██║╚██████╗██║  ██╗██║  ██║╚██████╔╝███████╗███████║"
 echo "╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝"
 
-# Instalando java
-sudo apt install openjdk-8-jre-headless -y
+# Instalando aplicações importantes
+download_list="curl git screen wget iptables-persistent openjdk-8-jre-headless htop ufw"
 
-# Instalando screen
-sudo apt install screen -y
-
-# Instalando IPTables
-sudo apt install iptables-persistent -y
-
-# Instalando hTop
-sudo apt install htop -y
-
-# Instalando curl 
-sudo apt install curl -y
-
-# Instalando wGet
-
-sudo apt install wget -y
+sudo apt install -y ${download_list}
 
 # Instalando NodeJS
-
-sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
-sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt -y install nodejs
-sudo apt -y install gcc g++ make
-
-# Instalando Git
-
-sudo apt install git -y
-
-# Instalando UFW
-
-sudo apt install ufw -y
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt -y install nodejs && sudo apt -y install gcc g++ make
 
 echo " █████╗ ███╗   ██╗████████╗██╗██████╗ ██████╗  ██████╗ ███████╗"
 echo "██╔══██╗████╗  ██║╚══██╔══╝██║██╔══██╗██╔══██╗██╔═══██╗██╔════╝"
@@ -108,14 +82,15 @@ iptables -A INPUT -p icmp --icmp-type timestamp-request -j DROP
 iptables -A INPUT -p icmp --icmp-type router-solicitation -j DROP
 iptables -A INPUT -p icmp -m limit --limit 2/second -j ACCEPT
 
-Sudo /etc/init.d/iptables-persistent save
+sudo /etc/init.d/iptables-persistent save
+sleep 5
 
-echo "██╗    ██╗██╗  ██╗██╗████████╗███████╗██╗     ██╗███████╗████████╗";
-echo "██║    ██║██║  ██║██║╚══██╔══╝██╔════╝██║     ██║██╔════╝╚══██╔══╝";
-echo "██║ █╗ ██║███████║██║   ██║   █████╗  ██║     ██║███████╗   ██║   ";
-echo "██║███╗██║██╔══██║██║   ██║   ██╔══╝  ██║     ██║╚════██║   ██║   ";
-echo "╚███╔███╔╝██║  ██║██║   ██║   ███████╗███████╗██║███████║   ██║   ";
-echo " ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝╚═╝╚══════╝   ╚═╝   ";
+echo "██╗    ██╗██╗  ██╗██╗████████╗███████╗██╗     ██╗███████╗████████╗"
+echo "██║    ██║██║  ██║██║╚══██╔══╝██╔════╝██║     ██║██╔════╝╚══██╔══╝"
+echo "██║ █╗ ██║███████║██║   ██║   █████╗  ██║     ██║███████╗   ██║   "
+echo "██║███╗██║██╔══██║██║   ██║   ██╔══╝  ██║     ██║╚════██║   ██║   "
+echo "╚███╔███╔╝██║  ██║██║   ██║   ███████╗███████╗██║███████║   ██║   "
+echo " ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚══════╝╚═╝╚══════╝   ╚═╝   "
 
 # Colocar na lista branca os ips da cloudflare
 
@@ -130,7 +105,3 @@ for i in $(curl "https://www.cloudflare.com/ips-v6"); do sudo iptables --permane
 
 iptables --permanent --zone=public --add-rich-rule 'rule family="ipv4" source address="'${SERVER_IP}'" port port=22 protocol=tcp accept'
 iptables --permanent --change-zone=eth0 --zone=public
-sudo firewall-cmd --reload
-
-
-# Colocar na lista branca os ips da TCPShield

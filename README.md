@@ -1,4 +1,4 @@
-# Minhas automações
+# Unbê baianagens
 
 Criei alguns scripts para agilizar a instalação de meus servidores e estarei disponibilizando para quem queira utilizar também
 

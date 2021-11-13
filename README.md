@@ -4,4 +4,4 @@ Criei alguns scripts para automatizar minhas tarefas criando servidores, e resol
 
 Caso queira contribuir com a evolução do projeto, basta criar um PR ( pull request ), e eu irei analisar se é válido a integração
 
-Créditos: [zGumelo](https://github.com/zGumeloBr)
+Créditos: [zGumelo](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas =3

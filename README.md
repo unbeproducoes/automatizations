@@ -1,17 +1,20 @@
 # Minhas automações
 
-Criei alguns scripts para automatizar minhas tarefas criando servidores, e resolvi liberar para quem quer evitar dor de cabeça como eu
+Criei alguns scripts para agilizar a instalação de meus servidores e estarei disponibilizando para quem queira utilizar também
 
-Caso queira contribuir com a evolução do projeto, basta criar um PR ( pull request ), e eu irei analisar se é válido a integração :3
 
-Créditos: [zGumelo](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas =3
+🤝 | Gostaria de contribuir com o projeto? crie um PR e envie sua contribuição!
+- Basta clicar **[AQUI](https://github.com/unbeproducoes/automatizations/pulls)** para enviar sua contribuição.
+
 
 ## Em breve
 
-- Instalação opcional por modulo.
-- Whitelist para ips do TCPShield (opcional por modulo).
-- Instalação de Redis, MongoDB e Nginx.
-- Adição da ferramenta PHPMyAdmin para facilitar manipulação de bancos de dados.
-- Adição do banco de dados MariaDB.
+- Whitelist para ips do TCPShield.
+- Whitelist para ips da CloudFlare.
+- Instalação de Redis, MongoDB, MariaDB, PHPMyAdmin, Nginx ou Apache.
 - Criação automática de diretórios para servidores.
-- Script para iniciar, fechar e reinicializar de forma automática.
+- Script para inicializar, finalizar e reinicializar de forma automática.
+
+### Agradecimentos 
+
+[zGumeloBr](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas =3

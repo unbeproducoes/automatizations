@@ -12,3 +12,6 @@ Créditos: [zGumelo](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas =
 - Whitelist para ips do TCPShield (opcional por modulo).
 - Instalação de Redis, MongoDB e Nginx.
 - Adição da ferramenta PHPMyAdmin para facilitar manipulação de bancos de dados.
+- Adição do banco de dados MariaDB.
+- Criação automática de diretórios para servidores.
+- Script para iniciar, fechar e reinicializar de forma automática.

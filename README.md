@@ -9,6 +9,7 @@ Criei alguns scripts para agilizar a instalação de meus servidores e estarei d
 
 ## Em breve
 
+- Blacklist de conexões externas vindas da Azure, GCloud e OVH.
 - Instalação de Redis, MongoDB, MariaDB, PHPMyAdmin, Nginx ou Apache.
 - Criação automática de diretórios para servidores.
 - Script para inicializar, finalizar e reinicializar de forma automática.

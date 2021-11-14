@@ -52,6 +52,6 @@ iptables -A INPUT -p icmp --icmp-type timestamp-request -j DROP
 iptables -A INPUT -p icmp --icmp-type router-solicitation -j DROP
 iptables -A INPUT -p icmp -m limit --limit 2/second -j ACCEPT
 
-sudo /etc/init.d/iptables-persistent save
+sudo apt install iptables-persistent -y -y
 
 output "Regras AntiDDOS aplicadas com êxito."

@@ -9,8 +9,6 @@ Criei alguns scripts para agilizar a instalação de meus servidores e estarei d
 
 ## Em breve
 
-- Whitelist para ips do TCPShield.
-- Whitelist para ips da CloudFlare.
 - Instalação de Redis, MongoDB, MariaDB, PHPMyAdmin, Nginx ou Apache.
 - Criação automática de diretórios para servidores.
 - Script para inicializar, finalizar e reinicializar de forma automática.

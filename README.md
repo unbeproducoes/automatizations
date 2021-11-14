@@ -15,7 +15,7 @@ Criei alguns scripts para agilizar a instalação de meus servidores e estarei d
 
 ## Documentação
 
-- Basta acessar minha **[wiki]()** e acessar o modulo que deseja instalar!
+- Basta acessar minha **[wiki](https://docs.hovermc.tk/)** e acessar o modulo que deseja instalar!
 
 ### Agradecimentos 
 

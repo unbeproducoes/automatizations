@@ -29,4 +29,4 @@ sudo apt install -y ${download_list}
 sleep 2
 sudo apt install -y ${node_js}
 
-output "Programas essênciais instalados com êxito."
+output "Programas essenciais instalados com êxito."

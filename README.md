@@ -14,10 +14,6 @@ Criei alguns scripts para agilizar a instalação de meus servidores e estarei d
 - Criação automática de diretórios para servidores.
 - Script para inicializar, finalizar e reinicializar de forma automática.
 
-## Documentação
-
-- Basta acessar minha **[wiki](https://docs.hovermc.tk/)** e acessar o modulo que deseja instalar!
-
 ### Agradecimentos 
 
 [zGumeloBr](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas =3

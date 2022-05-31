@@ -64,6 +64,7 @@ sysctl -w net/netfilter/nf_conntrack_tcp_loose=0
 
 # Tornando as regras permanentes
 
-sudo apt install -y iptables-persistent
+sudo iptables-save > /etc/iptables/rules.v4
+sudo apt -y install iptables=persistent
 
-output "Regras AntiDDOS aplicadas com êxito."
+output "Proteções DoS/AntiDDoS aplicadas com êxito."

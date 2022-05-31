@@ -17,7 +17,7 @@ get_ports(){
     read -a ports
 
     if [[ $ports = "" ]]; then
-      output "Você não pode deixar a lista de portas vazias!"
+      output "Você deve especificar ao menos uma porta válida!"
       get_ports
     fi
 }

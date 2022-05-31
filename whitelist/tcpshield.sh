@@ -13,10 +13,10 @@ get_ports(){
     fi
 }
 
-output "Coloque a lista de portas que gostaria de abrir, separado por espaços"
-output "Por exemplo, caso queira abrir as portas entre 25565-25570, digite: "
-output "25565 25566 25567 25568 25569 25570"
-output "caso contrário, coloque as portas que deseja!"
+output "Coloque a porta do seu BungeeCord aqui, caso possua mais de um"
+output "Coloque as portas em sequência como demonstrado abaixo:"
+output "25565 25577 10001 9999 3400 25570"
+output "caso não possua mais de um BungeeCord, basta por a unica porta que utiliza!"
 
 get_ports
 
@@ -28,7 +28,7 @@ if [ -r /etc/os-release ]; then
    lsb_dist="$(. /etc/os-release && echo "$ID")"
    dist_version="$(. /etc/os-release && echo "$VERSION_ID")"
 else
-   output "Distro não suportada! Apenas RHEL, CentOS, Fedora, Ubuntu, e Debian são suportadas!" 
+   output "Distribuição não suportada, Apenas: RHEL, CentOS, Fedora, Ubuntu, e Debian são suportadas!" 
    exit 1
 fi
 
@@ -39,9 +39,9 @@ else
 fi
 
 if [ "$lsb_dist" =  "ubuntu" ] || [ "$lsb_dist" =  "debian" ]; then
-     apt -y install ufw wget
+     sudo apt -y install ufw wget
      # Abertura da porta 22 para evitar que a conexão seja interrompida durante a execução do script
-     ufw allow 22
+     sudo ufw allow 22
      wget https://tcpshield.com/v4
      
      for ips in `cat v4`;

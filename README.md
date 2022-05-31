@@ -15,5 +15,5 @@ Criei alguns scripts para agilizar a instalação de meus servidores e estarei d
 
 ### Agradecimentos
 
-[zGumeloBr](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas.
-[tommytran732](https://github.com/tommytran732) - Criação dos scripts de whitelist do TCPShield e CloudFlare.
+- [zGumeloBr](https://github.com/zGumeloBr) - Ajuda em algumas dúvidas.
+- [tommytran732](https://github.com/tommytran732) - Criação dos scripts de whitelist do TCPShield e CloudFlare.
